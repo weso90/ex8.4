@@ -1,0 +1,22 @@
+body{
+    background-color: grey;
+}
+.header{
+    background-color:antiquewhite;
+}
+.webpage{
+    width: 50%;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+}
+.left{
+    text-align: center;
+    background-color:white;
+    width:40%;
+}
+.right{
+    background-color:beige;
+    width: 60%;
+}
