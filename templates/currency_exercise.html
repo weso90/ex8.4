@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block content %}
+<form method="POST">
+    <select name="currency">
+        {% for i in currency %}
+            <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+    </select>
+    <input type="number" name="amount" placeholder="podaj kwotę" step="0.01">
+    <button type="submit">Przelicz</button>
+</form>
+
+{% if result %}
+{{ result }}
+{% endif %}
+{% endblock %}

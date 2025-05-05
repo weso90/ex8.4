@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>strona ąćłę</title>
+    <title>Aplikacja webowa flask - kurs kodilla</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
 <div class="webpage">
-    <div class="header"><h1>Moja stronka na szybko</h1></div>
+    <div class="header"><h1>Aplikacja webowa - kurs kodilla</h1></div>
     <div class="content">
         <div class="left">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE5F_IUkiRVWqU1U04ED4XGOmS-KKaGMXkEg&s" alt=""><br>
-            Jak widać jestem koneserem żużla. Nie mylić z pseudokibicami :)
+            <ul>
+                <li><a href="/cur">Przelicznik walut</a></li>
+                <li>jakiś link w przyszłości</li>
         </div>
         <div class="right">
             {% block content %}{% endblock %}
